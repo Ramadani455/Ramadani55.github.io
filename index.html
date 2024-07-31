@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tebak Khodamm</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tebak Khodamm</h1>
+    <p>Namamu Biar saya tebak:</p>
+    <input type="text" id="nama">
+    <button onclick="ramal()">Ramal</button>
+    <p id="hasil"></p>
+
+    <script>
+        function ramal() {
+            // Dapatkan nama yang dimasukkan
+            let nama = document.getElementById("nama").value;
+
+            // Array berisi ramalan-ramalan acak
+            let ramalan = [
+                "macan tutul",
+                "anak genderwo",
+                "harimau baleendah",
+                "kunti khas kebumen",
+                "tol cipularang",
+                "hui boled",
+                "Aku sayang kamu",
+                "tuyul khas rawabogo",
+                "tuyul pendek",
+                "botol Yakult",
+                "Baso tampa aci",
+                "batagor teh eli",
+                "bunga mawar warna hitam",
+                "Kosong",
+                "Kunti bogel",
+                "pembuat web ini kesepian );",
+                "Drakula Khas Ciwidey"
+            ];
+
+            // Pilih ramalan secara acak
+            let ramalanAcak = ramalan[Math.floor(Math.random() * ramalan.length)];
+
+            // Tampilkan ramalan di elemen dengan id "hasil"
+            document.getElementById("hasil").innerHTML = "Hai, " + nama + "! " + ramalanAcak;
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tebak Khodam</title>
+    <style>
+        body {
+            background-color: #000000d5; /* Warna latar belakang abu-abu muda */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff; /* Warna teks judul */
+        }
+        button {
+            background-color: #109215; /* Warna latar belakang tombol */
+            color: rgb(236, 232, 232);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
